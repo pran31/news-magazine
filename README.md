@@ -68,8 +68,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
 Pending Tasks:
-
-Test case for the small UI components.
+ Some tests are not running
 
 Project time -
 Hours in effort: 3 Hours
