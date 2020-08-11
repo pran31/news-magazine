@@ -1,10 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import ArticleSearch from '../ArticleSearch';
-import { render, cleanup, waitForElement } from '@testing-library/react';
+import renderer from 'react-test-renderer';
+import DetailedNews from '../DetailedNews';
 
-afterEach(cleanup);
 
-it("fetches and displays data",async ()=>{
-
-})
+describe('DetailedNews test', () => {
+  it('DetailedNews should match snapshot', () => {
+    const component = renderer.create(<DetailedNews
+       />);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});

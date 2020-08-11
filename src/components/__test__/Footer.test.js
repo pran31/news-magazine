@@ -1,12 +1,11 @@
-
 import React from 'react';
 import renderer from 'react-test-renderer';
-import NewsCard from '../NewsCard';
+import Footer from '../Footer';
 
 
-describe('NewsCard test', () => {
-  it('NewsCard should match snapshot', () => {
-    const component = renderer.create(<NewsCard
+describe('Footer test', () => {
+  it('Footer should match snapshot', () => {
+    const component = renderer.create(<Footer
        />);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
